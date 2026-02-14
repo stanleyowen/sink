@@ -1,11 +1,9 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'default',
+  layout: 'auth',
 })
 </script>
 
 <template>
-  <div class="flex flex-1 items-center justify-center">
-    <Login />
-  </div>
+  <Login />
 </template>

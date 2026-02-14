@@ -8,7 +8,7 @@ const { stats } = useGithubStats()
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex min-h-screen flex-col overflow-x-hidden">
     <!-- Header -->
     <header>
       <nav

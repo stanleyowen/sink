@@ -21,11 +21,11 @@ useSeoMeta({
     <DashboardSidebarAppSidebar />
     <SidebarInset
       class="
-        max-h-svh overflow-hidden
+        max-h-svh overflow-hidden overflow-x-hidden
         md:max-h-[calc(100svh-1rem)]
       "
     >
-      <div class="flex h-full flex-col">
+      <div class="flex h-full flex-col overflow-x-hidden">
         <header
           class="
             z-20 flex shrink-0 flex-col gap-2 border-b bg-background p-4
@@ -50,7 +50,11 @@ useSeoMeta({
           />
         </header>
 
-        <div ref="scrollContainer" class="flex-1 overflow-y-auto p-4">
+        <div
+          ref="scrollContainer" class="
+            flex-1 overflow-x-hidden overflow-y-auto p-4
+          "
+        >
           <slot />
         </div>
       </div>
